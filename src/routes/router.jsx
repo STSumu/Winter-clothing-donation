@@ -9,6 +9,7 @@ import HomeLayout from "../layouts/HomeLayout";
 import Campaign from "../pages/Campaign";
 import Login from "../pages/Login";
 import AuthLayout from "../layouts/AuthLayout";
+import Register from "../pages/Register";
   
   export const router = createBrowserRouter([
     {
@@ -43,7 +44,7 @@ import AuthLayout from "../layouts/AuthLayout";
         },
         {
           path:'/auth/register',
-          element:<h1>Register</h1>
+          element:<Register></Register>
         }
       ]
     },
