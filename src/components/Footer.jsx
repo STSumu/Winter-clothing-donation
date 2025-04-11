@@ -58,7 +58,7 @@ Berlin, De 81566</a>
     </div>
   </nav>
       </div>
-      <div class="footer sm:footer-horizontal footer-center border-t-white border-t-2 text-white p-4">
+      <div className="footer sm:footer-horizontal footer-center border-t-white border-t-2 text-white p-4">
      
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>

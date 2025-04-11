@@ -7,6 +7,8 @@ import {
   import ReactDOM from "react-dom/client";
 import HomeLayout from "../layouts/HomeLayout";
 import Campaign from "../pages/Campaign";
+import Login from "../pages/Login";
+import AuthLayout from "../layouts/AuthLayout";
   
   export const router = createBrowserRouter([
     {
@@ -32,11 +34,18 @@ import Campaign from "../pages/Campaign";
       ]
     },
     {
-      path:'/auth/login',
-      element:<h1>login</h1>
+      path:'/auth',
+      element:<AuthLayout></AuthLayout>,
+      children:[
+        {
+          path:'/auth/login',
+          element:<Login></Login>,
+        },
+        {
+          path:'/auth/register',
+          element:<h1>Register</h1>
+        }
+      ]
     },
-    {
-      path:'/auth/register',
-      element:<h1>Register</h1>
-    }
+    
   ]);

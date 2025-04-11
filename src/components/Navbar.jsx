@@ -1,8 +1,28 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../assets/logofinal.png'
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const [bg,setbg]=useState('');
+    const location=useLocation();
+    const paths=['/auth','/auth/login','/auth/register'];
+  useEffect(() => {
+    if(paths.includes(location.pathname) || scrolled){
+        setbg('bg-[#254E70]');
+    }
+    else{
+        setbg('bg-transparent')
+    }
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 500); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
     const links=<>
        <li>
         <NavLink to='/'>Home</NavLink>
@@ -18,7 +38,7 @@ const Navbar = () => {
        </li>
     </>
     return (
-        <div className="navbar bg-[#254E70] px-5 md:px-16 text-white shadow-sm fixed z-10">
+        <div className={`navbar px-5 md:px-16 text-white shadow-sm fixed z-10 ${bg}`}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,7 +59,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn text-white shadow-none border-0 bg-[#d9542c]">Donate</a>
+    <Link className="btn text-white shadow-none border-0 bg-[#d9542c]" to='/auth/login'>Login</Link>
   </div>
 </div>
     );
