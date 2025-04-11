@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+a.active{
+    background-color: #D6EAF8;
+    color:#254E70;
+    margin-right: 4px;
+}
+.winky-rough-font {
+    font-family: "Winky Rough", sans-serif;
+  }
