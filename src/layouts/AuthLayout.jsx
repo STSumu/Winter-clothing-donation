@@ -2,10 +2,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import bg from '../assets/Snow.svg'
 import { Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 const AuthLayout = () => {
     return (
         <div>
+            <ToastContainer></ToastContainer>
             <header>
                 <Navbar></Navbar>
             </header>
