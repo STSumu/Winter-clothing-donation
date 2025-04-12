@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -7,7 +7,8 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Login = () => {
       const [show, setShow] = useState(false);
       const [error,setError]=useState('');
-      const {loginUser,setUser}=useContext(AuthContext);
+      const emailRef=useRef();
+      const {loginUser,setUser,resetPassword}=useContext(AuthContext);
 
       const handleLogin=(e)=>{
             e.preventDefault();
@@ -28,6 +29,23 @@ const Login = () => {
                  setError(err.message);
             })
       }
+      const handleForgetPassword=()=>{
+        const email=emailRef.current.value;
+        if(!email){
+           setError("Enter a valid email.");
+           return;
+        }
+        else{
+          resetPassword(emailRef.current.value)
+          .then(()=>{
+            toast('Password reset email sent');
+          })
+          .catch((err)=>{
+            setError(err.message);
+          })
+        }
+            // 
+      }
   return (
     <div className="flex justify-center items-center p-4">
       <div className="card bg-base-100 w-ful lg:w-1/3 mt-24 shrink-0 shadow-2xl shadow-[#254E70] p-10">
@@ -36,7 +54,7 @@ const Login = () => {
         </h1>
         <form onSubmit={handleLogin} className="fieldset *:w-full my-2">
           <label className="fieldset-label font-semibold text-lg">Email</label>
-          <input type="email" name="email" className="input" placeholder="Email" />
+          <input type="email" ref={emailRef} name="email" className="input" placeholder="Email" />
           <label className="fieldset-label font-semibold text-lg">
             Password
           </label>
@@ -50,7 +68,7 @@ const Login = () => {
           </div>
           </div>
           <div>
-            <a className="link link-hover">Forgot password?</a>
+            <a className="link link-hover" onClick={handleForgetPassword}>Forgot password?</a>
           </div>
           <button className="btn  text-white shadow-none border-0 bg-[#d9542c] mt-4">
             Login
