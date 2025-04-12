@@ -1,11 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../assets/logofinal.png'
+import { AuthContext } from '../Provider/AuthProvider';
+import { toast } from "react-toastify";
+import { FaUserCircle } from "react-icons/fa";
+
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [bg,setbg]=useState('');
     const location=useLocation();
+    const {user,logOut}=useContext(AuthContext);
+    
+    const handleLogout=()=>{
+          logOut()
+          .then(()=>{
+            toast('User successfully logged out.');
+          })
+          .catch((err)=>{
+             alert(err.message);
+          })
+    }
     const paths=['/auth','/auth/login','/auth/register'];
   useEffect(() => {
     if(paths.includes(location.pathname) || scrolled){
@@ -59,7 +74,19 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link className="btn text-white shadow-none border-0 bg-[#d9542c]" to='/auth/login'>Login</Link>
+    {
+      user && user.email ? 
+      <div className='flex gap-2 items-center justify-center'>
+        {
+          user.photoURL ? <img className='object-cover rounded-full w-10 h-10 border border-white' src={user.photoURL} alt="User" /> 
+          :
+          <FaUserCircle  className='w-10 h-10'/>
+        }
+        <button className="btn text-white shadow-none border-0 bg-[#d9542c]" onClick={handleLogout}>Log Out</button>
+      </div>
+      :
+      <Link className="btn text-white shadow-none border-0 bg-[#d9542c]" to='/auth/login'>Login</Link>
+    }
   </div>
 </div>
     );

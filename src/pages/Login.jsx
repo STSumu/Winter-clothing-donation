@@ -15,15 +15,11 @@ const Login = () => {
             setError('');
             const email=e.target.email.value;
             const password=e.target.password.value;
-            const passValidation=/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/
-            if(!passValidation.test(password)){
-                setError('Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long.');
-                return;
-            }
             loginUser(email,password)
             .then((result)=>{
                  setUser(result.user);
                  toast('Account successfully logged in.');
+                 e.target.reset();
             })
             .catch((err)=>{
                  setError(err.message);
