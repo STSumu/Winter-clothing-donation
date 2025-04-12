@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
       const [show, setShow] = useState(false);
       const [error,setError]=useState('');
+      const {loginUser,setUser}=useContext(AuthContext);
+
       const handleLogin=(e)=>{
             e.preventDefault();
             setError('');
@@ -16,6 +19,14 @@ const Login = () => {
                 setError('Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long.');
                 return;
             }
+            loginUser(email,password)
+            .then((result)=>{
+                 setUser(result.user);
+                 toast('Account successfully logged in.');
+            })
+            .catch((err)=>{
+                 setError(err.message);
+            })
       }
   return (
     <div className="flex justify-center items-center p-4">
