@@ -10,11 +10,14 @@ import Campaign from "../pages/Campaign";
 import Login from "../pages/Login";
 import AuthLayout from "../layouts/AuthLayout";
 import Register from "../pages/Register";
+import Error from "../pages/Error";
   
   export const router = createBrowserRouter([
     {
       path: "/",
       element: <HomeLayout></HomeLayout>,
+      errorElement:<Error></Error>,
+      
       children:[
         {
           path:'/',

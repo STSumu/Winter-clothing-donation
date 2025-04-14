@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Warmth for Kurigram",
+    "image": "https://example.com/images/kurigram_campaign.jpg",
+    "description": "Flood-hit communities in Kurigram are enduring the winter with barely enough to survive. This project is mobilizing support to distribute jackets, sweaters, and thermal blankets to families living in makeshift shelters who are most vulnerable to the freezing nights.",
+    "status": "Ongoing",
+    "contactInfo": "kurigram.volunteers@gmail.com",
+    "division": "Rangpur"
+  },
+  {
+    "id": 2,
+    "title": "Thakurgaon Village Drive",
+    "image": "https://example.com/images/thakurgaon_drive.jpg",
+    "description": "Northern Thakurgaon faces some of the harshest winter waves in Bangladesh. Through university-led donation drives, we’re collecting coats, scarves, and winter kits to ensure no elderly person or child suffers the cold in rural hamlets.",
+    "status": "Ongoing",
+    "contactInfo": "thakurgaon.unistudents@gmail.com",
+    "division": "Rangpur"
+  },
+  {
+    "id": 3,
+    "title": "Dhaka Warm-Up Campaign",
+    "image": "https://example.com/images/dhaka_campaign.jpg",
+    "description": "Dhaka’s streets become dangerously cold at night for the thousands who sleep under open skies. Volunteers are working district-wide to supply sleeping bags, jackets, and hot meals to street children, the homeless, and rickshaw pullers.",
+    "status": "Ongoing",
+    "contactInfo": "dhakadonate@ngo.org",
+    "division": "Dhaka"
+  },
+  {
+    "id": 4,
+    "title": "Gazipur Winter Help",
+    "image": "https://example.com/images/gazipur_donation.jpg",
+    "description": "With winter chills setting into garment worker neighborhoods, this project partners with local factories to supply warm clothing, socks, and blankets to laborers and their families who often cannot afford seasonal protection.",
+    "status": "Ongoing",
+    "contactInfo": "gazipur.connect@gmail.com",
+    "division": "Dhaka"
+  },
+  {
+    "id": 5,
+    "title": "Rajshahi Blanket Mission",
+    "image": "https://example.com/images/rajshahi_blanket.jpg",
+    "description": "In remote corners of Rajshahi, elderly citizens often face the biting cold without warm clothes. This mission is focused on distributing thick woolen blankets, shawls, and caps through local youth clubs and social workers.",
+    "status": "Ongoing",
+    "contactInfo": "rajshahi.care@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 6,
+    "title": "Bogura Winter Relief Project",
+    "image": "https://example.com/images/bogura_relief.jpg",
+    "description": "Bogura schools and communities are joining forces to help students and low-income families stay warm. The project collects donated winter clothes from urban schools and redistributes them across under-resourced villages.",
+    "status": "Ongoing",
+    "contactInfo": "bogura.studentsrelief@gmail.com",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 7,
+    "title": "Comilla Cold Relief",
+    "image": "https://example.com/images/comilla_coldrelief.jpg",
+    "description": "Families in the outskirts of Comilla are often overlooked when winter aid is distributed. We are working with local NGOs to deliver warm kits including thermal innerwear, children’s sweaters, and sleeping blankets to these hard-to-reach populations.",
+    "status": "Ongoing",
+    "contactInfo": "comilla.reliefvolunteers@gmail.com",
+    "division": "Chattogram"
+  },
+  {
+    "id": 8,
+    "title": "Brahmanbaria Blanket Supply",
+    "image": "https://example.com/images/brahmanbaria_blankets.jpg",
+    "description": "After a recent fire incident displaced many families in Brahmanbaria, this campaign is offering emergency cold relief. Priority is given to women and children, with aid packages containing blankets, beanies, and warm meals.",
+    "status": "Upcoming",
+    "contactInfo": "brahmanbaria.relief@gmail.com",
+    "division": "Chattogram"
+  },
+  {
+    "id": 9,
+    "title": "Blanket Drive in Sylhet",
+    "image": "https://example.com/images/sylhet_blanket_drive.jpg",
+    "description": "Tea workers in Sylhet’s hills often brave extreme temperatures with no proper winter protection. This campaign is bringing in community donors and organizations to provide durable, warm blankets to families living in tea estates.",
+    "status": "Ongoing",
+    "contactInfo": "sylhethelpcenter@gmail.com",
+    "division": "Sylhet"
+  }
+]
