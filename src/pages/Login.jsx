@@ -8,7 +8,7 @@ const Login = () => {
       const [show, setShow] = useState(false);
       const [error,setError]=useState('');
       const emailRef=useRef();
-      const {loginUser,setUser,resetPassword}=useContext(AuthContext);
+      const {loginUser,setUser,resetPassword,loginWithGoogle}=useContext(AuthContext);
 
       const handleLogin=(e)=>{
             e.preventDefault();
@@ -41,6 +41,16 @@ const Login = () => {
           })
         }
             // 
+      };
+      const handleGoogleLogin=()=>{
+        loginWithGoogle()
+        .then((result)=>{
+          setUser(result.user);
+        })
+        .catch((err)=>{
+          setError(err.message);
+        }) 
+
       }
   return (
     <div className="flex justify-center items-center p-4">
@@ -76,7 +86,7 @@ const Login = () => {
             Register
           </Link>
         </p>
-        <button className="btn  bg-white shadow-none border border-[#d9542c] text-[#d9542c] mt-4">
+        <button onClick={handleGoogleLogin} className="btn  bg-white shadow-none border border-[#d9542c] text-[#d9542c] mt-4">
           <FaGoogle></FaGoogle> Login with Google
         </button>
         {

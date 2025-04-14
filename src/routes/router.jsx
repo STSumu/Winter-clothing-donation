@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import AuthLayout from "../layouts/AuthLayout";
 import Register from "../pages/Register";
 import Error from "../pages/Error";
+import Home from "../pages/Home";
   
   export const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ import Error from "../pages/Error";
       children:[
         {
           path:'/',
-          element:<h1>Home</h1>
+          element:<Home></Home>
         },
         {
           path:'/campaign',

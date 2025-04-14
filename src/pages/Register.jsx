@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const Register = () => {
   const [show, setShow] = useState(false);
   const [error, setError] = useState("");
-  const { createUser, updateUserProfile, setUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile, setUser,loginWithGoogle } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -44,6 +44,16 @@ const Register = () => {
         setError(err.message);
       });
   };
+  
+  const handleGoogleLogin=()=>{
+    loginWithGoogle()
+    .then((result)=>{
+      setUser(result.user);
+    })
+    .catch((err)=>{
+      setError(err.message);
+    })
+  }
   return (
     <div className="flex justify-center items-center p-4">
       <div className="card bg-base-100 w-full md:w-1/2 lg:w-1/3 my-12 shrink-0 shadow-2xl shadow-[#254E70] p-10">
@@ -99,7 +109,7 @@ const Register = () => {
             Login.
           </Link>
         </p>
-        <button className="btn  bg-white shadow-none border border-[#d9542c] text-[#d9542c] mt-4">
+        <button onClick={handleGoogleLogin} className="btn  bg-white shadow-none border border-[#d9542c] text-[#d9542c] mt-4">
           <FaGoogle></FaGoogle> Login with Google
         </button>
         {error && <p className="text-red-600 text-xs mt-2">{error}</p>}

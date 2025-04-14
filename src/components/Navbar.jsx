@@ -19,16 +19,15 @@ const Navbar = () => {
         alert(err.message);
       });
   };
-  const paths = ["/auth", "/auth/login", "/auth/register"];
-  console.log(location.pathname);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollStatus = window.scrollY > 500;
 
-      if (paths.includes(location.pathname) || scrollStatus) {
-        setbg("bg-[#254E70]");
+      if (location.pathname == '/' && !scrollStatus) {
+         setbg("bg-transparent");
       } else {
-        setbg("bg-transparent");
+         setbg("bg-[#254E70]");
       }
     };
 

@@ -11,9 +11,8 @@ const HomeLayout = () => {
             <ToastContainer></ToastContainer>
             <header>
                 <Navbar></Navbar>
-                <Banner></Banner>
             </header>
-            <main className='container mx-auto px-5 md:px-10'>
+            <main >
                 
                <Outlet></Outlet>
             </main>
