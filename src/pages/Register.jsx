@@ -33,7 +33,7 @@ const Register = () => {
         toast("Account Successfully Registered.");
         updateUserProfile(profile)
         .then(()=>{
-          
+           e.target.reset();
         })
         .catch((err)=>{
             setError(err.message);

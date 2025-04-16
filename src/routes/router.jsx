@@ -12,6 +12,9 @@ import AuthLayout from "../layouts/AuthLayout";
 import Register from "../pages/Register";
 import Error from "../pages/Error";
 import Home from "../pages/Home";
+import PrivateRoute from "./PrivateRoute";
+import CampaignDetails from "../pages/CampaignDetails";
+import Loading from "../pages/Loading";
   
   export const router = createBrowserRouter([
     {
@@ -35,6 +38,10 @@ import Home from "../pages/Home";
         {
           path:'/dashboard',
           element:<h1>Dashboard</h1>
+        },
+        {
+          path:'/details',
+          element:<PrivateRoute><CampaignDetails></CampaignDetails></PrivateRoute>
         }
       ]
     },

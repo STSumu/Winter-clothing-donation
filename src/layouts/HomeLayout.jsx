@@ -12,7 +12,7 @@ const HomeLayout = () => {
             <header>
                 <Navbar></Navbar>
             </header>
-            <main >
+            <main className='min-h-screen'>
                 
                <Outlet></Outlet>
             </main>

@@ -43,6 +43,7 @@ const Login = () => {
             // 
       };
       const handleGoogleLogin=()=>{
+        setError('');
         loginWithGoogle()
         .then((result)=>{
           setUser(result.user);

@@ -1,4 +1,5 @@
-import React from 'react';
+import { AuthContext } from '../Provider/AuthProvider';
+import { Link} from 'react-router-dom';
 
 const CampaignCard = ({campaign}) => {
     const {title,image,description,division}=campaign;
@@ -15,7 +16,12 @@ const CampaignCard = ({campaign}) => {
     <p className='text-start'>{description}</p>
     <label className='text-start'>Division:{division}</label>
     <div className="card-actions">
-      <button className="btn bg-white shadow-none border border-[#d9542c] text-[#d9542c] mt-4">Donate Now</button>
+    <Link
+              className="btn text-white shadow-none border-0 bg-[#d9542c]"
+              to='/details'
+            >
+              Donate Now
+            </Link>
     </div>
   </div>
 </div>
