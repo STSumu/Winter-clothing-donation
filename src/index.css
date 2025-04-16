@@ -10,3 +10,6 @@ a.active{
 .winky-rough-font {
     font-family: "Winky Rough", sans-serif;
   }
+  .animate__animated.animate__slideInLeft {
+    --animate-duration: 1s;
+  }
