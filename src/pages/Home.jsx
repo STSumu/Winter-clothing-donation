@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
+import Volunteer from '../components/Volunteer';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
              </section>
              
              <section className='container mx-auto px-5 md:px-10'>
-
+              <Volunteer></Volunteer>
              </section>
 
         </div>

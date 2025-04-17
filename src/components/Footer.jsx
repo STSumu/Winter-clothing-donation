@@ -3,7 +3,7 @@ import logo from  '../assets/logofinal.png'
 
 const Footer = () => {
   return (
-    <footer className="space-y-6 bg-[#254E70] text-white px-5 md:px-16 py-10">
+    <footer className="space-y-6 bg-[#254E70] glass text-white px-5 md:px-16 py-10">
       <div className="footer sm:footer-horizontal">
       <aside>
         <img className="w-40" src={logo} alt="" />

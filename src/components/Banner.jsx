@@ -12,7 +12,7 @@ const Banner = () => {
 
   return (
     <Swiper
-      className='h-[300px] md:h-[400px] lg:h-[800px] w-full'
+      className='h-[300px] md:h-[500px] lg:h-[800px] w-full'
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}

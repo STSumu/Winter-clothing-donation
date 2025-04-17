@@ -22,12 +22,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollStatus = window.scrollY > 500;
+      const scrollStatus = window.scrollY > 300;
 
       if (location.pathname == '/' && !scrollStatus) {
          setbg("bg-transparent");
       } else {
-         setbg("bg-[#254E70]");
+         setbg("bg-[#254E70] glass");
       }
     };
 

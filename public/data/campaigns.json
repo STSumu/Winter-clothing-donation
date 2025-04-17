@@ -1,83 +1,146 @@
 [
   {
     "id": 1,
-    "title": "Warmth for Kurigram",
-    "image": "https://example.com/images/kurigram_campaign.jpg",
-    "description": "Flood-hit communities in Kurigram are enduring the winter with barely enough to survive. This project is mobilizing support to distribute jackets, sweaters, and thermal blankets to families living in makeshift shelters who are most vulnerable to the freezing nights.",
-    "status": "Ongoing",
-    "contactInfo": "kurigram.volunteers@gmail.com",
+    "title": "Winter Help for Rangpur",
+    "image": "/src/assets/cardImg/1.jpg",
+    "description": "Emergency warm clothes for extreme cold in Rangpur.",
+    "status": "Active",
+    "contactInfo": "rangpur1@warmclothes.org | +8801711000015",
     "division": "Rangpur"
   },
   {
     "id": 2,
-    "title": "Thakurgaon Village Drive",
-    "image": "https://example.com/images/thakurgaon_drive.jpg",
-    "description": "Northern Thakurgaon faces some of the harshest winter waves in Bangladesh. Through university-led donation drives, we’re collecting coats, scarves, and winter kits to ensure no elderly person or child suffers the cold in rural hamlets.",
-    "status": "Ongoing",
-    "contactInfo": "thakurgaon.unistudents@gmail.com",
-    "division": "Rangpur"
+    "title": "Warm Clothes for Sylhet Children",
+    "image": "/src/assets/cardImg/2.jpg",
+    "description": "Helping underprivileged school children with winter essentials.",
+    "status": "Upcoming",
+    "contactInfo": "sylhet2@warmclothes.org | +8801711000002",
+    "division": "Sylhet"
   },
   {
     "id": 3,
-    "title": "Dhaka Warm-Up Campaign",
-    "image": "https://example.com/images/dhaka_campaign.jpg",
-    "description": "Dhaka’s streets become dangerously cold at night for the thousands who sleep under open skies. Volunteers are working district-wide to supply sleeping bags, jackets, and hot meals to street children, the homeless, and rickshaw pullers.",
-    "status": "Ongoing",
-    "contactInfo": "dhakadonate@ngo.org",
-    "division": "Dhaka"
+    "title": "Winter Aid for Mymensingh Schools",
+    "image": "/src/assets/cardImg/3.jpg",
+    "description": "Supplying warm clothes to kids in remote schools.",
+    "status": "Upcoming",
+    "contactInfo": "mymensingh2@warmclothes.org | +8801711000012",
+    "division": "Mymensingh"
   },
   {
     "id": 4,
-    "title": "Gazipur Winter Help",
-    "image": "https://example.com/images/gazipur_donation.jpg",
-    "description": "With winter chills setting into garment worker neighborhoods, this project partners with local factories to supply warm clothing, socks, and blankets to laborers and their families who often cannot afford seasonal protection.",
-    "status": "Ongoing",
-    "contactInfo": "gazipur.connect@gmail.com",
-    "division": "Dhaka"
+    "title": "Support for Khulna Fishing Families",
+    "image": "/src/assets/cardImg/4.jpg",
+    "description": "Providing warm gear to fishermen in Khulna.",
+    "status": "Active",
+    "contactInfo": "khulna1@warmclothes.org | +8801711000009",
+    "division": "Khulna"
   },
   {
     "id": 5,
-    "title": "Rajshahi Blanket Mission",
-    "image": "https://example.com/images/rajshahi_blanket.jpg",
-    "description": "In remote corners of Rajshahi, elderly citizens often face the biting cold without warm clothes. This mission is focused on distributing thick woolen blankets, shawls, and caps through local youth clubs and social workers.",
-    "status": "Ongoing",
-    "contactInfo": "rajshahi.care@gmail.com",
+    "title": "Blankets for Rajshahi Villages",
+    "image": "/src/assets/cardImg/5.jpg",
+    "description": "Blankets and shawls for elderly in rural Rajshahi.",
+    "status": "Completed",
+    "contactInfo": "rajshahi1@warmclothes.org | +8801711000007",
     "division": "Rajshahi"
   },
   {
     "id": 6,
-    "title": "Bogura Winter Relief Project",
-    "image": "https://example.com/images/bogura_relief.jpg",
-    "description": "Bogura schools and communities are joining forces to help students and low-income families stay warm. The project collects donated winter clothes from urban schools and redistributes them across under-resourced villages.",
-    "status": "Ongoing",
-    "contactInfo": "bogura.studentsrelief@gmail.com",
-    "division": "Rajshahi"
+    "title": "Helping Families in Barisal",
+    "image": "/src/assets/cardImg/6.jpg",
+    "description": "Local volunteers supporting families with warm kits.",
+    "status": "Completed",
+    "contactInfo": "barisal2@warmclothes.org | +8801711000014",
+    "division": "Barisal"
   },
   {
     "id": 7,
-    "title": "Comilla Cold Relief",
-    "image": "https://example.com/images/comilla_coldrelief.jpg",
-    "description": "Families in the outskirts of Comilla are often overlooked when winter aid is distributed. We are working with local NGOs to deliver warm kits including thermal innerwear, children’s sweaters, and sleeping blankets to these hard-to-reach populations.",
-    "status": "Ongoing",
-    "contactInfo": "comilla.reliefvolunteers@gmail.com",
+    "title": "Warm Clothes for Chattogram Families",
+    "image": "/src/assets/cardImg/7.webp",
+    "description": "Supporting port workers' families during cold waves.",
+    "status": "Upcoming",
+    "contactInfo": "chattogram2@warmclothes.org | +8801711000006",
     "division": "Chattogram"
   },
   {
     "id": 8,
-    "title": "Brahmanbaria Blanket Supply",
-    "image": "https://example.com/images/brahmanbaria_blankets.jpg",
-    "description": "After a recent fire incident displaced many families in Brahmanbaria, this campaign is offering emergency cold relief. Priority is given to women and children, with aid packages containing blankets, beanies, and warm meals.",
-    "status": "Upcoming",
-    "contactInfo": "brahmanbaria.relief@gmail.com",
-    "division": "Chattogram"
+    "title": "Help for Dhaka Slum Children",
+    "image": "/src/assets/cardImg/8.webp",
+    "description": "Donating sweaters and gloves to children in Dhaka slums.",
+    "status": "Completed",
+    "contactInfo": "dhaka2@warmclothes.org | +8801711000004",
+    "division": "Dhaka"
   },
   {
     "id": 9,
-    "title": "Blanket Drive in Sylhet",
-    "image": "https://example.com/images/sylhet_blanket_drive.jpg",
-    "description": "Tea workers in Sylhet’s hills often brave extreme temperatures with no proper winter protection. This campaign is bringing in community donors and organizations to provide durable, warm blankets to families living in tea estates.",
-    "status": "Ongoing",
-    "contactInfo": "sylhethelpcenter@gmail.com",
+    "title": "Youth-Led Campaign in Rajshahi",
+    "image": "/src/assets/cardImg/9.webp",
+    "description": "Students leading local winter donation efforts.",
+    "status": "Active",
+    "contactInfo": "rajshahi2@warmclothes.org | +8801711000008",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 10,
+    "title": "Orphan Support in Rangpur",
+    "image": "/src/assets/cardImg/10.jpg",
+    "description": "Helping orphan children survive the winter.",
+    "status": "Upcoming",
+    "contactInfo": "rangpur2@warmclothes.org | +8801711000016",
+    "division": "Rangpur"
+  },
+  {
+    "id": 11,
+    "title": "Barisal Riverside Blanket Drive",
+    "image": "/src/assets/cardImg/11.jpg",
+    "description": "Reaching riverside dwellers with warm winter donations.",
+    "status": "Active",
+    "contactInfo": "barisal1@warmclothes.org | +8801711000013",
+    "division": "Barisal"
+  },
+  {
+    "id": 12,
+    "title": "Children's Winter Aid in Khulna",
+    "image": "/src/assets/cardImg/12.jpg",
+    "description": "Winter clothes for orphans in Khulna.",
+    "status": "Upcoming",
+    "contactInfo": "khulna2@warmclothes.org | +8801711000010",
+    "division": "Khulna"
+  },
+  {
+    "id": 13,
+    "title": "Street Relief in Mymensingh",
+    "image": "/src/assets/cardImg/13.webp",
+    "description": "Clothing drive for people living on Mymensingh streets.",
+    "status": "Active",
+    "contactInfo": "mymensingh1@warmclothes.org | +8801711000011",
+    "division": "Mymensingh"
+  },
+  {
+    "id": 14,
+    "title": "Warmth for Chattogram Hill Areas",
+    "image": "/src/assets/cardImg/14.jpg",
+    "description": "Delivering blankets to tribal families in Chattogram hill tracts.",
+    "status": "Active",
+    "contactInfo": "chattogram1@warmclothes.org | +8801711000005",
+    "division": "Chattogram"
+  },
+  {
+    "id": 15,
+    "title": "Helping Villages in Sylhet",
+    "image": "/src/assets/cardImg/15.webp",
+    "description": "Distributing jackets and shawls in remote Sylhet villages.",
+    "status": "Active",
+    "contactInfo": "sylhet1@warmclothes.org | +8801711000001",
     "division": "Sylhet"
+  },
+  {
+    "id": 16,
+    "title": "Helping Dhaka Homeless",
+    "image": "/src/assets/cardImg/16.jpg",
+    "description": "Providing blankets and warm food to the homeless in Dhaka city.",
+    "status": "Active",
+    "contactInfo": "dhaka1@warmclothes.org | +8801711000003",
+    "division": "Dhaka"
   }
 ]
