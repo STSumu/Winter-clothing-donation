@@ -40,8 +40,9 @@ import Loading from "../pages/Loading";
           element:<h1>Dashboard</h1>
         },
         {
-          path:'/details',
-          element:<PrivateRoute><CampaignDetails></CampaignDetails></PrivateRoute>
+          path:'/details/:id',
+          element:<PrivateRoute><CampaignDetails></CampaignDetails></PrivateRoute>,
+          loader:()=>fetch('/data/campaigns.json'),
         }
       ]
     },

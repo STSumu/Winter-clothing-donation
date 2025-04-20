@@ -55,7 +55,7 @@ const Navbar = () => {
   );
   return (
     <div
-      className={`navbar px-5 md:px-16 text-white shadow-sm fixed z-10 ${bg}`}
+      className={`navbar px-5 md:px-16 text-white shadow-sm fixed z-20 ${bg}`}
     >
       <div className="navbar-start">
         <div className="dropdown">

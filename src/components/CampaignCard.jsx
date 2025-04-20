@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const CampaignCard = ({ campaign }) => {
-  const { title, image, description, division } = campaign;
+  const { id,title, image, description, division } = campaign;
   return (
     <div className="card bg-base-100 h-[400px] shadow-sm shadow-[#d9542c] border border-[#d9542c]/30" data-aos='fade-up'>
       <figure className="px-5 pt-5 h-2/3">
@@ -21,7 +21,7 @@ const CampaignCard = ({ campaign }) => {
         <div className="card-actions">
           <Link
             className="btn text-white shadow-none border-0 bg-[#d9542c]"
-            to="/details"
+            to={`/details/${id}`}
           >
             Donate Now
           </Link>
