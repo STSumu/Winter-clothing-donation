@@ -2,7 +2,7 @@ import { useState } from "react";
 import img1 from "../assets/feedbackImg/p1.jpg";
 import img2 from "../assets/feedbackImg/p2.jpg";
 import img3 from "../assets/feedbackImg/p3.jpg";
-import bg from "../assets/detail.png";
+
 
 const FeedBack = () => {
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -33,10 +33,11 @@ const FeedBack = () => {
         >
           Feedbacks
         </h1>
-        <p data-aos="fade-left">A Reliable source for people</p>
+        <p data-aos="fade-left" className='text-[#254E70] text-lg font-medium'>A Reliable source for people</p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-10 h-[100px]">
-        <div className="flex justify-center gap-3 w-1/2">
+      <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 h-[100px]">
+        {/* img container  */}
+        <div className="flex justify-center gap-3 w-full md:w-1/2" data-aos='fade-right'>
           {feedbacks.map((feedback, idx) => (
             <img
               key={idx}
@@ -50,13 +51,14 @@ const FeedBack = () => {
             ></img>
           ))}
         </div>
+        {/* feedbacks  */}
         <div className="w-full md:w-1/2 ">
-          <p className="w-3/4 opacity-80 shadow-xl p-5 rounded-lg">{feedbacks[selectedIdx].text}</p>
+          <p className="w-full md:w-3/4 opacity-80 shadow-xl p-5 rounded-lg" data-aos='fade-left'>{feedbacks[selectedIdx].text}</p>
         </div>
       </div>
-      <div className="w-full md:w-2/3 my-10">
+      <div className="w-full md:w-2/3 mt-30 mb-10">
         <h3 className="text-xl mb-2 md:mb-4 font-semibold text-center opacity-80">Give Us Your Feedback</h3>
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4" data-aos="fade-in">
           <textarea
             name="feedback"
             className="border border-gray-300 rounded-md p-3 h-32"

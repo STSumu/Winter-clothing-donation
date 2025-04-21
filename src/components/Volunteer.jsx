@@ -11,7 +11,7 @@ const Volunteer = () => {
         <h1 className="text-3xl md:text-4xl text-[#d9662c] border-l-[#d9662c] border-l-4 font-semibold pl-2" data-aos='fade-right'>
           Team
         </h1>
-        <p data-aos='fade-left'>
+        <p data-aos='fade-left' className='text-[#254E70] text-lg font-medium'>
           Meet Our Members
         </p>
       </div>
