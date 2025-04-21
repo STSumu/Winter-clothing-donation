@@ -9,7 +9,7 @@ const Navbar = () => {
   const [bg, setbg] = useState("");
   const location = useLocation();
   const { user, logOut } = useContext(AuthContext);
-
+  const paths=['/','/dashboard'];
   const handleLogout = () => {
     logOut()
       .then(() => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollStatus = window.scrollY > 300;
 
-      if (location.pathname == '/' && !scrollStatus) {
+      if (paths.includes(location.pathname) && !scrollStatus) {
          setbg("bg-transparent");
       } else {
          setbg("bg-[#254E70] glass");

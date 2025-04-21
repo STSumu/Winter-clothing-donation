@@ -15,6 +15,7 @@ import Home from "../pages/Home";
 import PrivateRoute from "./PrivateRoute";
 import CampaignDetails from "../pages/CampaignDetails";
 import Loading from "../pages/Loading";
+import Dashboard from "../pages/Dashboard";
   
   export const router = createBrowserRouter([
     {
@@ -37,7 +38,7 @@ import Loading from "../pages/Loading";
         },
         {
           path:'/dashboard',
-          element:<h1>Dashboard</h1>
+          element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>
         },
         {
           path:'/details/:id',

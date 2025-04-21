@@ -1,5 +1,4 @@
 import { IoLocationSharp } from "react-icons/io5";
-import { AuthContext } from "../Provider/AuthProvider";
 import { Link } from "react-router-dom";
 
 

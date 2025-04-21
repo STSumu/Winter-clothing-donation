@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Provider/AuthProvider";
 
@@ -9,6 +9,8 @@ const Login = () => {
       const [error,setError]=useState('');
       const emailRef=useRef();
       const {loginUser,setUser,resetPassword,loginWithGoogle}=useContext(AuthContext);
+      const location=useLocation();
+      const navigate=useNavigate();
 
       const handleLogin=(e)=>{
             e.preventDefault();
@@ -20,6 +22,7 @@ const Login = () => {
                  setUser(result.user);
                  toast('Account successfully logged in.');
                  e.target.reset();
+                 location?.state ? navigate(location.state):navigate('/');
             })
             .catch((err)=>{
                  setError(err.message);
@@ -47,6 +50,7 @@ const Login = () => {
         loginWithGoogle()
         .then((result)=>{
           setUser(result.user);
+          location?.state ? navigate(location.state):navigate('/');
         })
         .catch((err)=>{
           setError(err.message);

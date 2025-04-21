@@ -14,7 +14,7 @@ const CampaignDetails = () => {
        e.preventDefault();
        e.target.reset();
   }
-  const { title, id, image, description, division, status, contactInfo } = campaign;
+  const { title, image, description, division, status, contactInfo } = campaign;
 
     return (
         <div className="pt-20 flex flex-col min-h-screen bg-purple-300/10 px-2 md:px-20">
@@ -69,8 +69,8 @@ const CampaignDetails = () => {
             
           </div>
     {/* Donation Form */}
-   <div className="container mx-auto bg-white my-10 rounded-lg p-4 md:p-8 flex justify-between">
-   <form onSubmit={handleSubmit} className="space-y-4 pt-6 w-1/2">
+   <div className="container mx-auto bg-white my-10 rounded-lg p-4 md:p-8 flex flex-col md:flex-row justify-between">
+   <form onSubmit={handleSubmit} className="space-y-4 pt-6 w-full md:w-1/2">
               <h3 className="text-2xl font-semibold text-[#d9662c]">
                 Donation Form
               </h3>
@@ -127,8 +127,7 @@ const CampaignDetails = () => {
             <img
               src={bg}
               alt="Decoration"
-               className="hidden w-1/3 md:flex
-               items-center object-contain opacity-70"
+               className="w-full md:w-1/2  object-contain opacity-70"
             />
    </div>
           </div>
