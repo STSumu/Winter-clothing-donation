@@ -1,11 +1,29 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import bg from "../assets/snow1.svg";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Dashboard = () => {
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  const { user ,updateUserProfile} = useContext(AuthContext);
   const { photoURL, displayName, email } = user;
+  const [update,setUpdate]=useState(false);
+  const handleUpdate=(e)=>{
+    e.preventDefault();
+    const name=e.target.name.value;
+    const photo=e.target.photo.value;
+    const profile={
+      photoURL:photo,
+      displayName:name,
+    }
+    updateUserProfile(profile)
+    .then(()=>{
+         toast('Successfully updated the profile.');
+         setUpdate(false);
+    })
+    .catch(()=>{
+      alert('Could not update the profile.')
+    })
+  }
   return (
     <div className="flex flex-col min-h-screen">
       <header
@@ -20,15 +38,28 @@ const Dashboard = () => {
             alt="Profile"
           />
 
-          <div className="text-center px-6 w-full border border-[#d9542c] rounded-lg p-6">
+          <div className={`text-center px-6 w-full border border-[#d9542c] rounded-lg p-6 ${update && 'hidden'}`}>
             <h2 className="text-2xl font-semibold text-[#254E70]">
-              {displayName}
+              {displayName ? displayName : 'Username'}
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-600">{email}</p>
-            <button className="btn text-white bg-[#d9542c] mt-6 px-6 py-2 rounded hover:bg-[#c2441f] transition">
+            <button onClick={()=>setUpdate(true)} className="btn text-white bg-[#d9542c] mt-6 px-6 py-2 rounded hover:bg-[#c2441f] transition">
               Update Profile
             </button>
           </div>
+          <form onSubmit={handleUpdate} className={`fieldset  border-orange-500/50 rounded-box w-xs border p-4 ${!update && 'hidden'}`}>
+  
+
+  <label className="label">Name</label>
+  <input type="text" name='name' className="input" placeholder="Your Name" />
+
+  <label className="label">Photo URL</label>
+  <input type="text" name='photo' className="input" placeholder="Photo url" />
+
+  <button className="btn text-white bg-[#d9542c] mt-6 px-6 py-2 rounded hover:bg-[#c2441f] transition">
+              Update Information
+            </button>
+</form>
         </div>
       </section>
     </div>
