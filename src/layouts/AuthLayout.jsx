@@ -12,7 +12,7 @@ const AuthLayout = () => {
                 <Navbar></Navbar>
             </header>
             <main
-  className="min-h-screen pt-16 bg-cover bg-center"
+  className="min-h-screen pt-8 md:pt-16 bg-cover bg-center"
   style={{ backgroundImage: `url(${bg})` }}
 >
             <Outlet></Outlet>

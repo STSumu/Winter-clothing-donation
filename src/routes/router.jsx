@@ -38,7 +38,13 @@ import Dashboard from "../pages/Dashboard";
         },
         {
           path:'/dashboard',
-          element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+          element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+          // children:[
+          //   {
+          //     path:'/dashboard',
+          //     element:
+          //   }
+          // ]
         },
         {
           path:'/details/:id',
