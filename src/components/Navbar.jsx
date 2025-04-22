@@ -91,7 +91,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-">
+      <div className="md:navbar-end">
         {user && user.email ? (
           <div className="flex gap-2 items-center justify-center">
             {user.photoURL ? (

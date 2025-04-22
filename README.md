@@ -1,12 +1,31 @@
-# React + Vite
+# Winter Clothing Donation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A charity foundation to help people in need during winter by providing warm clothing. The platform connects donors with volunteers to distribute winter clothes to individuals in need across Bangladesh.
 
-Currently, two official plugins are available:
+## Website URL:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features:
+
+- **User Authentication**: Secure login and registration for users.
+- **Donation Campaigns**: View and participate in donation campaigns.
+- **Donation Process**: Users can easily donate clothes by filling up a form and submitting details.
+- **Map of Collection Points**: View collection points across various districts in Bangladesh.
+
+
+## npm Packages I have used:
+
+- **React**: JavaScript library for building user interfaces.
+- **React Router**: For routing and navigation within the app.
+- **React Toastify**: For showing toast notifications.
+- **Tailwind CSS**: Utility-first CSS framework for fast styling.
+- **Daisy UI**: Component library for building user interfaces with Tailwind.
+- **Firebase**: For user authentication and backend services (optional, based on your app setup).
+- **React Icons**: For adding icons in the UI (e.g., user profile, social media icons).
+- **AOS (Animate On Scroll)**: For adding scroll animations to elements.
+- **Swiper**: For adding sliding effect to banner.
+- **animate.css**: For adding animation effects to elements.
+- **Lottiefiles**: For adding animations.
+
+
