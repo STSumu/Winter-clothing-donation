@@ -22,7 +22,6 @@ const FeedBack = () => {
   ];
   const handleSlide = (idx) => {
     setSelectedIdx(idx);
-    console.log(idx);
   };
   return (
     <div className=" items-center flex flex-col justify-center gap-10">

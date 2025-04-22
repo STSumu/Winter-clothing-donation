@@ -55,9 +55,9 @@ const Navbar = () => {
   );
   return (
     <div
-      className={`navbar px-5 md:px-16 text-white shadow-sm fixed z-20 ${bg}`}
+      className={`w-full navbar px-2 md:px-16 text-white shadow-sm fixed z-20 ${bg}`}
     >
-      <div className="navbar-start">
+      <div className="navbar-start flex items-center w-1/2">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -83,7 +83,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <img className="w-20" src={logo} alt="" />
+        <img className="w-16 md:w-20" src={logo} alt="" />
         <a className="text-lg hidden md:flex">
           Winter <br></br> Clothing Donation
         </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-">
         {user && user.email ? (
           <div className="flex gap-2 items-center justify-center">
             {user.photoURL ? (

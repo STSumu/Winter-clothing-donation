@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -7,11 +7,10 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Login = () => {
       const [show, setShow] = useState(false);
       const [error,setError]=useState('');
-      const emailRef=useRef();
-      const {loginUser,setUser,resetPassword,loginWithGoogle}=useContext(AuthContext);
+      const {loginUser,setUser,loginWithGoogle}=useContext(AuthContext);
       const location=useLocation();
       const navigate=useNavigate();
-
+      const [email,setEmail]=useState(null);
       const handleLogin=(e)=>{
             e.preventDefault();
             setError('');
@@ -28,23 +27,7 @@ const Login = () => {
                  setError(err.message);
             })
       }
-      const handleForgetPassword=()=>{
-        const email=emailRef.current.value;
-        if(!email){
-           setError("Enter a valid email.");
-           return;
-        }
-        else{
-          resetPassword(emailRef.current.value)
-          .then(()=>{
-            toast('Password reset email sent');
-          })
-          .catch((err)=>{
-            setError(err.message);
-          })
-        }
-            // 
-      };
+      
       const handleGoogleLogin=()=>{
         setError('');
         loginWithGoogle()
@@ -65,7 +48,7 @@ const Login = () => {
         </h1>
         <form onSubmit={handleLogin} className="fieldset *:w-full my-2">
           <label className="fieldset-label font-semibold text-lg">Email</label>
-          <input type="email" ref={emailRef} name="email" className="input" placeholder="Email" />
+          <input type="email" name="email" className="input" placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/>
           <label className="fieldset-label font-semibold text-lg">
             Password
           </label>
@@ -79,7 +62,7 @@ const Login = () => {
           </div>
           </div>
           <div>
-            <a className="link link-hover" onClick={handleForgetPassword}>Forgot password?</a>
+            <Link className="link link-hover" to={`/auth/forget`} state={email}>Forgot password?</Link>
           </div>
           <button className="btn  text-white shadow-none border-0 bg-[#d9542c] mt-4">
             Login

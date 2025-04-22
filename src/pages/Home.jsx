@@ -8,19 +8,19 @@ import FeedBack from '../components/FeedBack';
 const Home = () => {
     return (
         <div>
-             <section>
+             <section className='w-full'>
              <Banner></Banner>
              </section>
-             <section className='container mx-auto px-5 md:px-10'>
+             <section className='container mx-auto px-4 md:px-10'>
                 <AboutUs></AboutUs>
              </section>
-             <section className='container mx-auto px-5 md:px-10'>
+             <section className='container mx-auto px-4 md:px-10'>
                 <HowItWorks></HowItWorks>
              </section>
-             <section className='container mx-auto px-5 md:px-10'>
+             <section className='container mx-auto px-4 md:px-10'>
               <Volunteer></Volunteer>
              </section>
-             <section className='container mx-auto px-5 md:px-10'>
+             <section className='container mx-auto px-4 md:px-10'>
                 <FeedBack></FeedBack>
              </section>
 

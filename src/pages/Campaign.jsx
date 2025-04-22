@@ -9,7 +9,6 @@ const Campaign = () => {
           .then(res=>res.json())
           .then(data=>setCampaigns(data))
     },[])
-    console.log(campaigns);
   return (
     <div className="text-center pt-30 md:pt-40 container mx-auto px-4 lg:px-12">
       <h2 className="text-3xl md:text-4xl text-[#d9662c] font-semibold animate__animated animate__slideInLeft">

@@ -16,6 +16,7 @@ import PrivateRoute from "./PrivateRoute";
 import CampaignDetails from "../pages/CampaignDetails";
 import Loading from "../pages/Loading";
 import Dashboard from "../pages/Dashboard";
+import ForgetPass from "../pages/ForgetPass";
   
   export const router = createBrowserRouter([
     {
@@ -64,6 +65,10 @@ import Dashboard from "../pages/Dashboard";
         {
           path:'/auth/register',
           element:<Register></Register>
+        },
+        {
+          path:'/auth/forget',
+          element:<ForgetPass></ForgetPass>
         }
       ]
     },

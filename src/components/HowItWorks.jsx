@@ -74,7 +74,7 @@ const HowItWorks = () => {
           <h4 className="text-2xl text-[#254E70]/70 font-semibold my-5">
             Collection Points
           </h4>
-          <div className="W-1/2 flex flex-col gap-5">
+          <div className="w-full md:w-1/2 flex flex-col gap-5">
             {points.map((location, idx) => (
               <div key={idx} data-aos='fade-left' data-aos-duration="300" data-aos-delay={idx*200} className="alert alert-success gap-0 text-base md:text-lg bg-green-50 text-green-800 shadow-sm rounded-md">
                 <span>{location.point},<strong>{location.district}</strong></span>

@@ -37,7 +37,6 @@ const Register = () => {
         })
         .catch((err)=>{
             setError(err.message);
-            console.log(err.message);
         })
       })
       .catch((err) => {
