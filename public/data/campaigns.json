@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Winter Help for Rangpur",
-    "image": "/src/assets/cardImg/1.jpg",
+    "image": "/cardImg/1.jpg",
     "description": "Emergency warm clothes for extreme cold in Rangpur.",
     "status": "Active",
     "contactInfo": "rangpur1@warmclothes.org | +8801711000015",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Warm Clothes for Sylhet Children",
-    "image": "/src/assets/cardImg/2.jpg",
+    "image": "/cardImg/2.jpg",
     "description": "Helping underprivileged school children with winter essentials.",
     "status": "Upcoming",
     "contactInfo": "sylhet2@warmclothes.org | +8801711000002",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Winter Aid for Mymensingh Schools",
-    "image": "/src/assets/cardImg/3.jpg",
+    "image": "/cardImg/3.jpg",
     "description": "Supplying warm clothes to kids in remote schools.",
     "status": "Upcoming",
     "contactInfo": "mymensingh2@warmclothes.org | +8801711000012",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Support for Khulna Fishing Families",
-    "image": "/src/assets/cardImg/4.jpg",
+    "image": "/cardImg/4.jpg",
     "description": "Providing warm gear to fishermen in Khulna.",
     "status": "Active",
     "contactInfo": "khulna1@warmclothes.org | +8801711000009",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Blankets for Rajshahi Villages",
-    "image": "/src/assets/cardImg/5.jpg",
+    "image": "/cardImg/5.jpg",
     "description": "Blankets and shawls for elderly in rural Rajshahi.",
     "status": "Completed",
     "contactInfo": "rajshahi1@warmclothes.org | +8801711000007",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Helping Families in Barisal",
-    "image": "/src/assets/cardImg/6.jpg",
+    "image": "/cardImg/6.jpg",
     "description": "Local volunteers supporting families with warm kits.",
     "status": "Completed",
     "contactInfo": "barisal2@warmclothes.org | +8801711000014",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "Warm Clothes for Chattogram Families",
-    "image": "/src/assets/cardImg/7.webp",
+    "image": "/cardImg/7.webp",
     "description": "Supporting port workers' families during cold waves.",
     "status": "Upcoming",
     "contactInfo": "chattogram2@warmclothes.org | +8801711000006",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "title": "Help for Dhaka Slum Children",
-    "image": "/src/assets/cardImg/8.webp",
+    "image": "/cardImg/8.webp",
     "description": "Donating sweaters and gloves to children in Dhaka slums.",
     "status": "Completed",
     "contactInfo": "dhaka2@warmclothes.org | +8801711000004",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "title": "Youth-Led Campaign in Rajshahi",
-    "image": "/src/assets/cardImg/9.webp",
+    "image": "/cardImg/9.webp",
     "description": "Students leading local winter donation efforts.",
     "status": "Active",
     "contactInfo": "rajshahi2@warmclothes.org | +8801711000008",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "title": "Orphan Support in Rangpur",
-    "image": "/src/assets/cardImg/10.jpg",
+    "image": "/cardImg/10.jpg",
     "description": "Helping orphan children survive the winter.",
     "status": "Upcoming",
     "contactInfo": "rangpur2@warmclothes.org | +8801711000016",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "title": "Barisal Riverside Blanket Drive",
-    "image": "/src/assets/cardImg/11.jpg",
+    "image": "11.jpg",
     "description": "Reaching riverside dwellers with warm winter donations.",
     "status": "Active",
     "contactInfo": "barisal1@warmclothes.org | +8801711000013",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "title": "Children's Winter Aid in Khulna",
-    "image": "/src/assets/cardImg/12.jpg",
+    "image": "12.jpg",
     "description": "Winter clothes for orphans in Khulna.",
     "status": "Upcoming",
     "contactInfo": "khulna2@warmclothes.org | +8801711000010",
@@ -110,7 +110,7 @@
   {
     "id": 13,
     "title": "Street Relief in Mymensingh",
-    "image": "/src/assets/cardImg/13.webp",
+    "image": "/cardImg/13.webp",
     "description": "Clothing drive for people living on Mymensingh streets.",
     "status": "Active",
     "contactInfo": "mymensingh1@warmclothes.org | +8801711000011",
@@ -119,7 +119,7 @@
   {
     "id": 14,
     "title": "Warmth for Chattogram Hill Areas",
-    "image": "/src/assets/cardImg/14.jpg",
+    "image": "/cardImg/14.jpg",
     "description": "Delivering blankets to tribal families in Chattogram hill tracts.",
     "status": "Active",
     "contactInfo": "chattogram1@warmclothes.org | +8801711000005",
@@ -128,7 +128,7 @@
   {
     "id": 15,
     "title": "Helping Villages in Sylhet",
-    "image": "/src/assets/cardImg/15.webp",
+    "image": "/cardImg/15.webp",
     "description": "Distributing jackets and shawls in remote Sylhet villages.",
     "status": "Active",
     "contactInfo": "sylhet1@warmclothes.org | +8801711000001",
@@ -137,7 +137,7 @@
   {
     "id": 16,
     "title": "Helping Dhaka Homeless",
-    "image": "/src/assets/cardImg/16.jpg",
+    "image": "/cardImg/16.jpg",
     "description": "Providing blankets and warm food to the homeless in Dhaka city.",
     "status": "Active",
     "contactInfo": "dhaka1@warmclothes.org | +8801711000003",

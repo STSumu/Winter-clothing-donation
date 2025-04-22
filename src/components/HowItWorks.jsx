@@ -70,13 +70,13 @@ const HowItWorks = () => {
         <p className="italic text-xs">Note: We accept used or unused clothes.</p>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center my-10">
-        <div>
+        <div className="w-full md:w-1/2">
           <h4 className="text-2xl text-[#254E70]/70 font-semibold my-5">
             Collection Points
           </h4>
-          <div className="w-full md:w-1/2 flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-5">
             {points.map((location, idx) => (
-              <div key={idx} data-aos='fade-left' data-aos-duration="300" data-aos-delay={idx*200} className="alert alert-success gap-0 text-base md:text-lg bg-green-50 text-green-800 shadow-sm rounded-md">
+              <div key={idx} data-aos='fade-left' data-aos-duration="300" data-aos-delay={idx*200} className="alert alert-success gap-0 text-base md:text-lg bg-green-50 text-green-800 shadow-sm rounded-md w-full">
                 <span>{location.point},<strong>{location.district}</strong></span>
               </div>
             ))}
